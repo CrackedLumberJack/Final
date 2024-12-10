@@ -7,6 +7,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="script.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous" defer></script>
     </head>
@@ -41,37 +42,80 @@
               </nav>
         </header>
         <main>
+            <div id="carousel" class="carousel slide d-block mx-auto" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/Hades_Carousel1.png" alt="Hades Carousel 1" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Hades_Carousel2.png" alt="Hades Carousel 2" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Hades_Carousel3.png" alt="Hades Carousel 3" class="d-block w-100">
+                  </div>
+                </div>
+              
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+
+            <div class="container" id="top_content">
+                <div class="row">
+                  <div class="col-md-9 content-container">
+                    <p>Hades is a rogue-like dungeon crawler in which you defy the god of the dead as you hack and slash your way out of the Underworld of Greek myth.</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="images/Hades_Gate.png" alt="Image" class="image-container">
+                  </div>
+                </div>
+            
+                <div class="row">
+                  <div class="col-md-3">
+                    <img src="images/Hades_Review.png" alt="Image" class="image-container">
+                  </div>
+                  <div class="col-md-9 content-container">
+                    <p>Hades is a one-of-a-kind rogue-lite that does a brilliant job of marrying its fast-paced action with its persistent, progressing story through a vividly reimagined Greek mythological underworld.</p>
+                    <p>-Review by Hades player</p>
+                </div>
+                </div>
+              </div>
             
         </main>
-        <footer class="text-center text-lg-start text-white" style="background-color: #A9A9A9">
+        <footer class="text-center text-lg-start text-white">
             <div class="container p-4 pb-0">
             <div class="row">
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">
-                Company name
-                </h6>
-                <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-                </p>
+                <h6 class="text-uppercase mb-4 font-weight-bold">Super Giant Games</h6>
+                <p>Supergiant Games is a small developer with big ambitions. They make games that spark your imagination like the games you played as a kid.</p>
             </div>
 
             <hr class="w-100 clearfix d-md-none" />
 
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                <h6 class="text-uppercase mb-4 font-weight-bold">More Super Giant Games</h6>
                 <p>
-                <a class="text-white">MDBootstrap</a>
+                <a class="text-white">Hades</a>
                 </p>
                 <p>
-                <a class="text-white">MDWordPress</a>
+                <a class="text-white">Hades II</a>
                 </p>
                 <p>
-                <a class="text-white">BrandFlow</a>
+                <a class="text-white">Pyre</a>
                 </p>
                 <p>
-                <a class="text-white">Bootstrap Angular</a>
+                <a class="text-white">Transistor</a>
                 </p>
             </div>
 
@@ -81,27 +125,24 @@
 
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                <p><i class="fas fa-home mr-3"></i>supergiantsgames.com</p>
+                <p><i class="fas fa-envelope mr-3"></i> supergiantsgmailgames.com</p>
+                <p><i class="fas fa-phone mr-3"></i>+ 01 234 567 88</p>
+                <p><i class="fas fa-print mr-3"></i>+ 01 234 567 89</p>
             </div>
 
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Hades 2</h6>
+                <a href="https://www.supergiantgames.com/games/hades-ii/">
+                    <img src="images/HadesII_Footer.png" alt="Logo">
+                  </a>
 
                 
             </div>
             </div>
         </div>
-        <div
-            class="text-center p-3"
-            style="background-color: rgba(0, 0, 0, 0.2)"
-            >
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/"
-            >MDBootstrap.com</a
-            >
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">© 2024 Copyright:
+            <a class="text-white" href="https://weber.edu/">Weber.edu</a>
         </div>
   </footer>
     </body>
